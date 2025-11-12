@@ -5,66 +5,66 @@ import { MapPin, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Development Engineer II",
-      company: "Patagonia Health",
-      period: "July 2024 – Aug 2025",
-      location: "Cary, NC",
+      title: "Senior DevOps Engineer",
+      company: "Pax8",
+      period: "June 2025 – Present",
+      location: "Remote",
       achievements: [
-        "Designed React dashboards adopted by 5.2K+ healthcare professionals, enabling real-time analytics and self-service insights.",
-        "Engineered a Java/Scala query engine with novel compilation algorithms, cutting segmentation latency to under 97ms across complex workloads.", 
-        "Accelerated feature delivery by 41% through AI-assisted workflows (Cursor, Claude, ChatGPT) with automated review, documentation, and refactoring.",
-        "Optimized algorithm runtimes by 63% via AI-powered query compilation, directly improving healthcare data accessibility.",
-        "Established a comprehensive testing framework (unit, integration, e2e), sustaining 99.98% production uptime.",
-        "Partnered with product managers and designers to translate requirements into scalable features, reducing rework by 18%.",
-        "Mentored junior developers on performance debugging and AI-first coding practices, raising team-wide productivity.",
-        "Pioneered cross-team adoption of AI-driven engineering workflows, setting new benchmarks for cycle time and innovation."
+        "Architected AWS DataZone data governance platform using Terraform and Terragrunt, implementing reusable IaC modules for domain management, environment blueprints, and IAM policies.",
+        "Led comprehensive cost optimization analysis for AWS MSK enhanced monitoring across CloudWatch, Sumo Logic, and MSK services, identifying 75% credit capacity headroom and establishing automated tracking mechanisms to prevent budget overruns.",
+        "Pioneered AI-driven development workflows by implementing MCP server integration between Cursor IDE and JIRA, enabling developers to create EPICs and Stories directly from development environment, reducing context switching and administrative overhead.",
+        "Deployed comprehensive monitoring infrastructure using SumoLogic, CloudWatch, and Slack integration with automated health checks and threshold-based alerts, reducing incident detection time and enabling proactive issue resolution.",
+        "Established FinOps cost tracking mechanisms using AWS Cost Explorer with tag-based filtering and automated anomaly detection for greater than 20% week-over-week cost spikes, implementing monthly stakeholder reporting processes.",
+        "Improved infrastructure deployment consistency by 60% using Terragrunt configuration inheritance patterns and Atlantis for PR-based infrastructure management workflows.",
+        "Mentored junior developers on performance debugging and AI-first coding practices, raising team-wide productivity."
       ],
       current: true
     },
     {
-      title: "Software Development Engineer",
-      company: "Wipro",
-      period: "Sep 2020 – Aug 2022",
-      location: "Hyderabad, IN",
+      title: "Senior Site Reliability Engineer",
+      company: "AT&T",
+      period: "January 2018 – June 2025",
+      location: "Dallas, TX",
       achievements: [
-        "Designed scalable REST APIs and React-based analytics interfaces using Node.js, serving thousands of enterprise users with high reliability.",
-        "Built Spark-based distributed pipelines, improving computation efficiency by 37% through optimized SQL query compilation.",
-        "Developed containerized microservices using Docker under evolving requirements, accelerating deployment timelines by 29%.",
-        "Created streaming evaluation engines for real-time queries, ensuring consistent performance in distributed environments.",
-        "Automated testing via TDD and CI/CD, sustaining 99.9% uptime in production systems.",
-        "Coordinated with product teams to align engineering solutions with customer requirements, reducing backlog items by 15%.",
-        "Optimized debugging processes across distributed applications, cutting resolution times by 22%.",
-        "Enhanced Cognizant's analytics offerings by delivering resilient, scalable distributed data solutions."
+        "Implemented end-to-end CI/CD pipelines using Jenkins and Azure DevOps, reducing deployment times by 40%.",
+        "Led a team of 5 engineers in migrating 50+ on-premises applications to Azure, reducing operational costs by 30% and enhancing scalability.",
+        "Optimized build processes, resulting in a 25% reduction in build failures using automated testing protocols and Docker containers.",
+        "Deployed Infrastructure as Code (IaC) using Terraform, improving deployment consistency by 60%.",
+        "Reduced error rates in production environments by 35% by setting up detailed monitoring dashboards using Azure Monitor, KQL, and Application Insights.",
+        "Automated security compliance checks, increasing compliance efficiency by 50% and reducing manual check times by 20 hours monthly.",
+        "Mentored junior engineers, increasing team skillset in Kubernetes and Azure DevOps."
       ],
       current: false
     },
     {
-      title: "Software Engineer",
-      company: "Cognizant Technologies",
-      period: "Dec 2019 – Sep 2020",
-      location: "Hyderabad, IN",
+      title: "Java Developer",
+      company: "UMKC",
+      period: "August 2016 – August 2017",
+      location: "Kansas City, MO",
       achievements: [
-        "Designed scalable REST APIs and React-based analytics interfaces using Node.js, serving thousands of enterprise users with high reliability.",
-        "Built Spark-based distributed data pipelines, improving computation efficiency by 37% through optimized SQL query compilation.",
-        "Developed containerized microservices using Docker under evolving requirements, accelerating deployment timelines by 29%.",
-        "Created real-time streaming evaluation engines for distributed queries, ensuring performance consistency at scale.",
-        "Automated testing via TDD and CI/CD, sustaining 99.9% production uptime in enterprise systems.",
-        "Strengthened Cognizant's analytics offerings through scalable, resilient distributed data solutions."
+        "Built and implemented Java Spring Boot-based REST microservices, enhancing application modularity and scalability by 40%.",
+        "Developed event-driven platforms using AWS Lambda Functions, SQS, and SNS, improving processing efficiency and reducing latency.",
+        "Configured infrastructure on AWS using CloudFormation, ensuring consistent and repeatable deployments, reducing setup time.",
+        "Configured DynamoDB tables with various indexing and capacity units, optimizing database performance and scalability by 20%.",
+        "Implemented AWS SDK for Java to utilize DynamoDB for non-relational data storage, enhancing data handling and storage efficiency.",
+        "Deployed custom CRON jobs as AWS Lambda Functions for scheduled reports, automating reporting processes and saving 10 hours of manual work weekly.",
+        "Written Dockerfiles for deploying applications on AWS CloudFormation, ECS, and EC2 instances, streamlining deployment processes and improving application reliability."
       ],
       current: false
     },
     {
-      title: "Software Engineer",
-      company: "Concentrix",
-      period: "Sep 2018 – Nov 2019",
-      location: "Hyderabad, IN",
+      title: "Java Engineer",
+      company: "Blackbucks",
+      period: "June 2015 – May 2016",
+      location: "Hyderabad, India",
       achievements: [
-        "Developed and deployed full-stack web applications using Java, Spring Boot, and React, improving workflow automation and reducing manual effort by 27%.",
-        "Built REST APIs integrated with relational databases, enabling real-time data access for 3.4K+ users across enterprise platforms.",
-        "Optimized SQL queries and backend services, cutting response times by 19% and enhancing overall application performance.",
-        "Collaborated with designers to implement responsive, user-friendly UIs, improving usability scores and reducing support tickets.",
-        "Automated testing with JUnit and Selenium, raising release quality and reducing production defects by 22%.",
-        "Supported deployments in Agile sprints, ensuring consistent delivery of features aligned with client business goals."
+        "Implemented MVC architecture using Spring MVC, improving application structure and maintainability, reducing development time by 25%.",
+        "Created data models and generated Hibernate mappings and domain objects, enhancing data manipulation and retrieval efficiency.",
+        "Developed Python scripts for automating regression tests, improving test efficiency and reducing testing time by 30%.",
+        "Developed unit/integration test cases using JUnit 3.8, increasing test coverage and code reliability.",
+        "Used Jira for tracking progress and followed Agile methodology, improving project management and task tracking efficiency.",
+        "Implemented Jenkins for CI/CD, automating build and deployment processes, reducing manual effort.",
+        "Utilized Log4J for efficient logging and debugging, enhancing application monitoring and issue resolution speed."
       ],
       current: false
     }

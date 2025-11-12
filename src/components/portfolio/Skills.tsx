@@ -15,57 +15,57 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages & Frameworks",
-      icon: Code,
-      skills: ["C++", "Go", "Java", "JavaScript", "Python", "React", "Scala", "Spring Boot", "TypeScript"],
-      color: "text-primary"
-    },
-    {
-      title: "Frontend & UX",
-      icon: Monitor,
-      skills: ["Data Visualization", "Human-Centered Design", "React", "UI/UX Design", "WCAG 2.1 Accessibility"],
-      color: "text-accent"
-    },
-    {
-      title: "Backend & Query Engines",
-      icon: Server,
-      skills: ["Query Compilation", "Multi-query Optimization", "REST APIs", "Streaming Evaluation", "SQL", "Postgres"],
-      color: "text-primary"
-    },
-    {
-      title: "Distributed Systems & Data Engineering",
-      icon: Database,
-      skills: ["Apache Spark", "Distributed Processing", "Incremental Evaluation"],
-      color: "text-accent"
-    },
-    {
-      title: "Cloud & Platforms",
+      title: "Cloud Platforms",
       icon: Cloud,
-      skills: ["AWS (EC2, S3, Lambda, RDS)", "CDK", "Docker", "Kubernetes"],
+      skills: ["Azure", "AWS", "Google Cloud Platform (GCP)"],
       color: "text-primary"
     },
     {
-      title: "AI & Productivity Tools",
-      icon: Brain,
-      skills: ["AI Code Review", "AI-assisted Development", "ChatGPT", "Claude", "Cursor", "Pair Programming"],
-      color: "text-accent"
-    },
-    {
-      title: "Development Practices",
-      icon: GitBranch,
-      skills: ["Agile/Scrum", "CI/CD", "Cross-functional Collaboration", "On-call Rotation", "Test-Driven Development (TDD)"],
-      color: "text-primary"
-    },
-    {
-      title: "Systems & Performance",
-      icon: Zap,
-      skills: ["Debugging", "Distributed Query Engines", "High-availability Systems", "Linux", "Performance Engineering"],
-      color: "text-accent"
-    },
-    {
-      title: "E-commerce & Tools",
+      title: "DevOps Tools",
       icon: Settings,
-      skills: ["Google Merchant Center", "Google Tags", "Node.js", "PDF Kit", "Shopify", "SST"],
+      skills: ["Jenkins", "ArgoCD", "Kubernetes", "Docker", "Terraform", "Ansible", "Puppet", "Atlantis", "Terragrunt"],
+      color: "text-accent"
+    },
+    {
+      title: "Programming Languages",
+      icon: Code,
+      skills: ["Python", "Bash", "PowerShell", "JavaScript", "Java", "YAML", "JSON"],
+      color: "text-primary"
+    },
+    {
+      title: "Monitoring & Logging",
+      icon: Monitor,
+      skills: ["Prometheus", "Grafana", "SumoLogic", "ELK Stack", "New Relic", "Datadog", "Splunk", "KQL", "Azure Monitor", "App Insights", "CloudWatch"],
+      color: "text-accent"
+    },
+    {
+      title: "Databases",
+      icon: Database,
+      skills: ["Oracle 12c/11g", "MySQL", "SQL Server", "Cassandra", "Cosmos DB", "MongoDB", "PostgreSQL", "DynamoDB"],
+      color: "text-primary"
+    },
+    {
+      title: "Infrastructure as Code",
+      icon: Server,
+      skills: ["Terraform", "CloudFormation", "Azure Resource Manager", "Terragrunt", "IaC Best Practices"],
+      color: "text-accent"
+    },
+    {
+      title: "CI/CD & Automation",
+      icon: GitBranch,
+      skills: ["Jenkins", "Azure DevOps", "GitHub Actions", "ArgoCD", "CI/CD Pipelines", "Automated Testing"],
+      color: "text-primary"
+    },
+    {
+      title: "AI & Development Tools",
+      icon: Brain,
+      skills: ["Cursor IDE", "MCP Server Integration", "AI-assisted Development", "JIRA Integration", "ChatGPT", "Claude"],
+      color: "text-accent"
+    },
+    {
+      title: "Container Orchestration",
+      icon: Zap,
+      skills: ["Kubernetes", "Docker", "ECS", "AKS", "Container Security", "Helm"],
       color: "text-primary"
     }
   ];

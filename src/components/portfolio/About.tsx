@@ -21,14 +21,14 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I am a results-driven software development engineer with 4+ years of experience designing distributed systems, 
-                  building high-performance query engines, and delivering intuitive data visualization platforms. My expertise spans 
-                  Java, Scala, Python, React, and Apache Spark, with proven success in reducing query latency by 60%+, scaling systems 
-                  to millions of data points, and sustaining 99.9%+ uptime. I thrive in fast-paced product environments, leveraging 
-                  AI-assisted development to cut delivery timelines by over 40% while maintaining enterprise-grade quality. Recognized 
-                  for combining performance engineering with human-centered design, I create solutions that drive adoption, improve 
-                  accessibility, and empower thousands of daily users. My goal is to contribute to product growth at scale by aligning 
-                  deep technical innovation with measurable business outcomes.
+                  I am a results-driven DevOps Engineer with 10 years of experience in designing and implementing CI/CD pipelines, 
+                  automating deployments, and managing cloud infrastructure. Proficient with tools like Jenkins, Docker, Kubernetes, 
+                  and Terraform, and experienced in both Azure and AWS environments. Skilled in root-cause analysis, monitoring, and 
+                  optimizing application performance with proven success in reducing deployment times by 40%, cutting operational costs 
+                  by 30%, and improving deployment consistency by 60%. I thrive in fast-paced environments, leveraging AI-driven 
+                  development workflows to reduce context switching and administrative overhead. Strong communicator with a proven 
+                  track record of leading cross-functional teams to deliver high-quality solutions. My goal is to build robust, 
+                  scalable infrastructure that drives business growth and operational excellence.
                 </p>
               </div>
             </div>
@@ -45,26 +45,15 @@ const About = () => {
                   <Card className="card-gradient border border-border/50 smooth-transition hover:border-primary/30">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">M.S. Information Technology</h4>
-                        <span className="text-sm text-muted-foreground">May 2024</span>
+                        <h4 className="font-semibold">M.S. Computer Science</h4>
+                        <span className="text-sm text-muted-foreground">2018</span>
                       </div>
-                      <p className="text-muted-foreground">University of the Cumberlands</p>
-                      <p className="text-xs text-muted-foreground mt-1">Williamsburg, KY</p>
+                      <p className="text-muted-foreground">University of Missouri – Kansas City</p>
+                      <p className="text-xs text-muted-foreground mt-1">Kansas City, MO</p>
                       <p className="text-xs text-muted-foreground mt-1">
-                        Relevant Coursework: Distributed Systems, Algorithms & Data Structures, Human-Computer Interaction, 
-                        Query Optimization, Performance Engineering
+                        Relevant Coursework: Cloud Computing, DevOps Practices, Distributed Systems, 
+                        Software Architecture, Performance Engineering
                       </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="card-gradient border border-border/50 smooth-transition hover:border-primary/30">
-                    <CardContent className="p-6">
-                      <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">B.Tech. Information Technology</h4>
-                        <span className="text-sm text-muted-foreground">May 2018</span>
-                      </div>
-                      <p className="text-muted-foreground">Jawaharlal Nehru Technological University</p>
-                      <p className="text-xs text-muted-foreground mt-1">Telangana, IN</p>
                     </CardContent>
                   </Card>
                 </div>

@@ -11,15 +11,15 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Hi, I'm{" "}
                 <span className="text-gradient">
-                  Bhavani Shanker Anumalla
+                  Ramana Kumar Bingi
                 </span>
               </h1>
               <h2 className="text-2xl lg:text-3xl text-muted-foreground">
-                Software Engineer & Cloud-Native Architect
+                Senior DevOps Engineer & Site Reliability Expert
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Designing scalable systems and optimizing enterprise infrastructure 
-                with Java, Spring Boot, React, and AWS.
+                10 years of experience designing CI/CD pipelines, automating deployments, 
+                and managing cloud infrastructure with AWS, Azure, and Kubernetes.
               </p>
             </div>
 
@@ -31,12 +31,12 @@ const Hero = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://bhavanishankeranumalla.tiiny.site/" target="_blank" rel="noopener noreferrer">
+                <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   View Resume
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://github.com/bsanumalla" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" />
                   GitHub
                 </a>
@@ -49,8 +49,8 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-accent p-1">
                 <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                   <img 
-                    src="/profile-photo.png" 
-                    alt="Bhavani Shanker Anumalla - Software Engineer"
+                    src="/profile-photo.jpeg" 
+                    alt="Ramana Kumar Bingi - DevOps Engineer"
                     className="w-72 h-72 rounded-full object-cover"
                   />
                 </div>

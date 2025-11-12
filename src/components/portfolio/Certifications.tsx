@@ -6,25 +6,53 @@ import { Award, ExternalLink } from "lucide-react";
 const Certifications = () => {
   const certifications = [
     {
-      title: "AWS Certified Data Engineer – Associate",
-      issuer: "Amazon Web Services",
-      level: "Associate", 
-      color: "text-green-400",
-      verificationLink: "https://www.credly.com/users/bhavani-shanker-anumalla/badges#credly"
+      title: "Microsoft Certified: Azure AI Fundamentals",
+      issuer: "Microsoft",
+      level: "Fundamentals", 
+      color: "text-blue-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
     },
     {
       title: "AWS Certified Developer – Associate",
       issuer: "Amazon Web Services", 
       level: "Associate",
-      color: "text-blue-400",
-      verificationLink: "https://www.credly.com/users/bhavani-shanker-anumalla/badges#credly"
+      color: "text-green-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
     },
     {
       title: "AWS Certified DevOps Engineer – Professional",
       issuer: "Amazon Web Services",
       level: "Professional",
       color: "text-orange-400",
-      verificationLink: "https://www.credly.com/users/bhavani-shanker-anumalla/badges#credly"
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
+    },
+    {
+      title: "Microsoft Certified: Azure Administrator Associate",
+      issuer: "Microsoft",
+      level: "Associate",
+      color: "text-blue-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
+    },
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
+      level: "Fundamentals",
+      color: "text-blue-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
+    },
+    {
+      title: "Microsoft Certified: Designing Microsoft Azure Infrastructure Solutions",
+      issuer: "Microsoft",
+      level: "Expert",
+      color: "text-purple-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
+    },
+    {
+      title: "Certified Professional Scrum Master",
+      issuer: "Scrum.org",
+      level: "Professional",
+      color: "text-green-400",
+      verificationLink: "https://www.linkedin.com/in/ramana-kumar-bingi/"
     }
   ];
 
@@ -38,7 +66,7 @@ const Certifications = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {certifications.map((cert, index) => (
             <Card 
               key={index}
@@ -70,16 +98,16 @@ const Certifications = () => {
               <Award className="h-16 w-16 text-primary mx-auto" />
               <h3 className="text-2xl font-semibold">Verify Certifications</h3>
               <p className="text-muted-foreground">
-                View and verify all my professional AWS certifications on Credly.
+                View and verify all my professional certifications on LinkedIn.
               </p>
               <Button size="lg" className="glow-effect" asChild>
                 <a 
-                  href="https://www.credly.com/users/bhavani-shanker-anumalla/badges#credly" 
+                  href="https://www.linkedin.com/in/ramana-kumar-bingi/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
                   <ExternalLink className="mr-2 h-5 w-5" />
-                  View Badge
+                  View LinkedIn Profile
                 </a>
               </Button>
             </div>

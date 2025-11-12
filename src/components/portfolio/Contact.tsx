@@ -32,32 +32,32 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "sanumalla0426@gmail.com",
-      href: "mailto:sanumalla0426@gmail.com"
+      value: "ramanakumarbingi@gmail.com",
+      href: "mailto:ramanakumarbingi@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (940) 613-4466",
-      href: "tel:+19406134466"
+      value: "+1 (816) 299-5454",
+      href: "tel:+18162995454"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Wichita Falls, TX",
+      value: "Dallas, TX",
       href: null
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "bsanumalla",
-      href: "https://github.com/bsanumalla"
+      value: "rbt2d",
+      href: "https://github.com/rbt2d"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "bhavanishankeranumalla",
-      href: "https://www.linkedin.com/in/bhavanishankeranumalla"
+      value: "ramana-kumar-bingi",
+      href: "https://www.linkedin.com/in/ramana-kumar-bingi/"
     }
   ];
 

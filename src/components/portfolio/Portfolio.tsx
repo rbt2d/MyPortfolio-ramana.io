@@ -6,31 +6,31 @@ import { ExternalLink, Github, Award, Zap, Brain } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Adobe Analytics Data Visualization Platform",
-      company: "Patagonia Health",
-      year: "2024",
-      description: "Built a React-based healthcare analytics platform with WCAG 2.1 compliance, ensuring accessibility for diverse user groups. Designed intuitive dashboards to surface insights from complex patient datasets, improving engagement rates by 34%. Enabled 4.9K+ medical professionals to make faster, data-driven decisions, reducing reporting time across teams.",
-      technologies: ["React", "JavaScript", "WCAG 2.1", "Healthcare Analytics", "Data Visualization"],
+      title: "AWS DataZone Data Governance Platform",
+      company: "Pax8",
+      year: "2025",
+      description: "Architected AWS DataZone data governance platform using Terraform and Terragrunt, implementing reusable IaC modules for domain management, environment blueprints, and IAM policies. Improved infrastructure deployment consistency by 60% using Terragrunt configuration inheritance patterns and Atlantis for PR-based infrastructure management workflows.",
+      technologies: ["AWS DataZone", "Terraform", "Terragrunt", "IaC", "Atlantis", "IAM"],
       featured: true,
       icon: Award
     },
     {
-      title: "High-Performance Query Engine",
-      company: "Wipro",
-      year: "2021", 
-      description: "Architected a multi-query optimization engine in Java/Scala, introducing streaming evaluation and incremental computation. Reduced query execution time by 61%, enabling real-time segmentation of billions of records. Strengthened enterprise applications by improving SLA compliance and scalability across client systems.",
-      technologies: ["Java", "Scala", "Query Optimization", "Distributed Systems", "Performance Engineering"],
-      featured: true,
-      icon: Zap
-    },
-    {
-      title: "AI-Assisted Development Framework",
-      company: "Patagonia Health",
-      year: "2024",
-      description: "Pioneered an AI-first engineering workflow using Cursor, Claude, and ChatGPT for automated code review and refactoring. Cut delivery timelines by 41% while sustaining high-quality engineering standards. Reduced developer onboarding time and eliminated repetitive tasks, establishing a cross-team model for efficiency.",
-      technologies: ["Cursor", "Claude", "ChatGPT", "AI-assisted Development", "Workflow Automation"],
+      title: "AI-Driven MCP Server Integration",
+      company: "Pax8",
+      year: "2025", 
+      description: "Pioneered AI-driven development workflows by implementing MCP server integration between Cursor IDE and JIRA, enabling developers to create EPICs and Stories directly from development environment. Reduced context switching and administrative overhead, significantly improving developer productivity and workflow efficiency.",
+      technologies: ["Cursor IDE", "MCP Server", "JIRA", "AI-assisted Development", "Workflow Automation"],
       featured: true,
       icon: Brain
+    },
+    {
+      title: "Azure Cloud Migration & Infrastructure",
+      company: "AT&T",
+      year: "2018-2025",
+      description: "Led a team of 5 engineers in migrating 50+ on-premises applications to Azure, reducing operational costs by 30% and enhancing scalability. Implemented end-to-end CI/CD pipelines using Jenkins and Azure DevOps, reducing deployment times by 40%. Deployed Infrastructure as Code using Terraform, improving deployment consistency by 60%.",
+      technologies: ["Azure", "Jenkins", "Azure DevOps", "Terraform", "CI/CD", "Cloud Migration"],
+      featured: true,
+      icon: Zap
     }
   ];
 
@@ -105,11 +105,11 @@ const Portfolio = () => {
               <Github className="h-16 w-16 text-primary mx-auto" />
               <h3 className="text-2xl font-semibold">More Projects</h3>
               <p className="text-muted-foreground">
-                Explore my complete portfolio of distributed systems, performance engineering, and AI-assisted development projects.
+                Explore my complete portfolio of DevOps automation, cloud infrastructure, and CI/CD pipeline projects.
               </p>
               <Button size="lg" className="glow-effect" asChild>
                 <a 
-                  href="https://github.com/bsanumalla" 
+                  href="https://github.com/rbt2d" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
