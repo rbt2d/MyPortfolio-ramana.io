@@ -20,7 +20,7 @@ const Header = () => {
       <nav className="container-max">
         <div className="flex items-center justify-between h-16">
           <div className="text-xl font-bold text-gradient">
-            Bhavani Shanker
+            Ramana Kumar Bingi
           </div>
 
           {/* Desktop Navigation */}
@@ -39,13 +39,13 @@ const Header = () => {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" asChild>
-              <a href="https://github.com/bsanumalla" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
                 GitHub
               </a>
             </Button>
             <Button size="sm" className="glow-effect" asChild>
-              <a href="https://bhavanishankeranumalla.tiiny.site/" target="_blank" rel="noopener noreferrer">
+              <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText className="h-4 w-4 mr-2" />
                 Resume
               </a>
@@ -79,13 +79,13 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" size="sm" asChild>
-                  <a href="https://github.com/bsanumalla" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
                     GitHub
                   </a>
                 </Button>
                 <Button size="sm" className="glow-effect" asChild>
-                  <a href="https://bhavanishankeranumalla.tiiny.site/" target="_blank" rel="noopener noreferrer">
+                  <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="h-4 w-4 mr-2" />
                     Resume
                   </a>
