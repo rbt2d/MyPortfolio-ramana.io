@@ -3,13 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { 
   Code, 
   Monitor, 
-  Server, 
   Cloud, 
   Database, 
-  Settings,
-  GitBranch,
-  Brain,
-  Zap
+  Settings
 } from "lucide-react";
 
 const Skills = () => {
@@ -23,49 +19,25 @@ const Skills = () => {
     {
       title: "DevOps Tools",
       icon: Settings,
-      skills: ["Jenkins", "ArgoCD", "Kubernetes", "Docker", "Terraform", "Ansible", "Puppet", "Atlantis", "Terragrunt"],
+      skills: ["Jenkins", "ArgoCD", "Kubernetes", "Docker", "Terraform", "Ansible", "Puppet"],
       color: "text-accent"
     },
     {
       title: "Programming Languages",
       icon: Code,
-      skills: ["Python", "Bash", "PowerShell", "JavaScript", "Java", "YAML", "JSON"],
+      skills: ["Python", "Bash", "PowerShell", "JavaScript", "YAML", "JSON"],
       color: "text-primary"
     },
     {
       title: "Monitoring & Logging",
       icon: Monitor,
-      skills: ["Prometheus", "Grafana", "SumoLogic", "ELK Stack", "New Relic", "Datadog", "Splunk", "KQL", "Azure Monitor", "App Insights", "CloudWatch"],
+      skills: ["Prometheus", "Grafana", "SumoLogic", "ELK Stack", "New Relic", "Datadog", "Splunk", "KQL", "Azure Monitor", "App Insights"],
       color: "text-accent"
     },
     {
       title: "Databases",
       icon: Database,
-      skills: ["Oracle 12c/11g", "MySQL", "SQL Server", "Cassandra", "Cosmos DB", "MongoDB", "PostgreSQL", "DynamoDB"],
-      color: "text-primary"
-    },
-    {
-      title: "Infrastructure as Code",
-      icon: Server,
-      skills: ["Terraform", "CloudFormation", "Azure Resource Manager", "Terragrunt", "IaC Best Practices"],
-      color: "text-accent"
-    },
-    {
-      title: "CI/CD & Automation",
-      icon: GitBranch,
-      skills: ["Jenkins", "Azure DevOps", "GitHub Actions", "ArgoCD", "CI/CD Pipelines", "Automated Testing"],
-      color: "text-primary"
-    },
-    {
-      title: "AI & Development Tools",
-      icon: Brain,
-      skills: ["Cursor IDE", "MCP Server Integration", "AI-assisted Development", "JIRA Integration", "ChatGPT", "Claude"],
-      color: "text-accent"
-    },
-    {
-      title: "Container Orchestration",
-      icon: Zap,
-      skills: ["Kubernetes", "Docker", "ECS", "AKS", "Container Security", "Helm"],
+      skills: ["Oracle 12c/11g", "MySQL 5.x", "SQL Server 12.0", "Cassandra", "Cosmos DB", "MongoDB", "PostgreSQL"],
       color: "text-primary"
     }
   ];
@@ -80,7 +52,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
