@@ -12,7 +12,6 @@ const Experience = () => {
       achievements: [
         "Architected AWS DataZone data governance platform using Terraform and Terragrunt, implementing reusable IaC modules for domain management, environment blueprints, and IAM policies.",
         "Led comprehensive cost optimization analysis for AWS MSK enhanced monitoring across CloudWatch, Sumo Logic, and MSK services, identifying 75% credit capacity headroom and establishing automated tracking mechanisms to prevent budget overruns.",
-        "Pioneered AI-driven development workflows by implementing MCP server integration between Cursor IDE and JIRA, enabling developers to create EPICs and Stories directly from development environment, reducing context switching and administrative overhead.",
         "Deployed comprehensive monitoring infrastructure using SumoLogic, CloudWatch, and Slack integration with automated health checks and threshold-based alerts, reducing incident detection time and enabling proactive issue resolution.",
         "Established FinOps cost tracking mechanisms using AWS Cost Explorer with tag-based filtering and automated anomaly detection for greater than 20% week-over-week cost spikes, implementing monthly stakeholder reporting processes.",
         "Improved infrastructure deployment consistency by 60% using Terragrunt configuration inheritance patterns and Atlantis for PR-based infrastructure management workflows.",

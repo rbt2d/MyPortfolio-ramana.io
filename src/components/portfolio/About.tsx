@@ -21,14 +21,11 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I am a results-driven DevOps Engineer with 10 years of experience in designing and implementing CI/CD pipelines, 
-                  automating deployments, and managing cloud infrastructure. Proficient with tools like Jenkins, Docker, Kubernetes, 
-                  and Terraform, and experienced in both Azure and AWS environments. Skilled in root-cause analysis, monitoring, and 
-                  optimizing application performance with proven success in reducing deployment times by 40%, cutting operational costs 
-                  by 30%, and improving deployment consistency by 60%. I thrive in fast-paced environments, leveraging AI-driven 
-                  development workflows to reduce context switching and administrative overhead. Strong communicator with a proven 
-                  track record of leading cross-functional teams to deliver high-quality solutions. My goal is to build robust, 
-                  scalable infrastructure that drives business growth and operational excellence.
+                  DevOps Engineer with 10 years of experience in designing and implementing CI/CD pipelines, automating deployments, 
+                  and managing cloud infrastructure. Proficient with tools like Jenkins, Docker, Kubernetes, and Terraform, and 
+                  experienced in both Azure and AWS environments. Skilled in root-cause analysis, monitoring, and optimizing 
+                  application performance. Strong communicator with a proven track record of leading cross-functional teams to 
+                  deliver high-quality solutions.
                 </p>
               </div>
             </div>
