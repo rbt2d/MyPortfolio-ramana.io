@@ -46,7 +46,7 @@ const About = () => {
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="font-semibold">M.S. Computer Science</h4>
-                        <span className="text-sm text-muted-foreground">2018</span>
+                        <span className="text-sm text-muted-foreground">2017</span>
                       </div>
                       <p className="text-muted-foreground">University of Missouri – Kansas City</p>
                       <p className="text-xs text-muted-foreground mt-1">Kansas City, MO</p>
