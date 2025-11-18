@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, FileText, Menu } from "lucide-react";
+import { Github, FileText, Menu, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -38,6 +38,12 @@ const Header = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <Button variant="outline" size="sm" asChild>
+              <a href="https://www.linkedin.com/in/ramana-kumar-bingi/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-4 w-4 mr-2" />
+                LinkedIn
+              </a>
+            </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
@@ -78,6 +84,12 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.linkedin.com/in/ramana-kumar-bingi/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-4 w-4 mr-2" />
+                    LinkedIn
+                  </a>
+                </Button>
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
