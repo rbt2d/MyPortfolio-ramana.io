@@ -60,58 +60,44 @@ const Certifications = () => {
     <section id="certifications" className="section-padding">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Certifications</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Professional cloud certifications demonstrating expertise in AWS technologies and distributed systems.
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">Certifications</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
-          {certifications.map((cert, index) => (
-            <Card 
-              key={index}
-              className="card-gradient border border-border/50 smooth-transition hover:border-primary/30 hover:scale-105"
-            >
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="p-3 rounded-full bg-primary/10">
-                    <Award className={`h-8 w-8 ${cert.color}`} />
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            {certifications.map((cert, index) => (
+              <div 
+                key={index}
+                className="p-6 border border-border rounded-lg hover:border-primary/50 transition-colors"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-4">
+                    <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <Badge variant="outline" className="text-xs">
+                      {cert.level}
+                    </Badge>
                   </div>
+                  <h3 className="font-semibold text-lg leading-tight">
+                    {cert.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                 </div>
-                <CardTitle className="text-lg leading-tight">
-                  {cert.title}
-                </CardTitle>
-                <p className="text-muted-foreground text-sm">{cert.issuer}</p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <Badge variant="outline" className="text-xs">
-                  {cert.level}
-                </Badge>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
 
-        <div className="text-center">
-          <Card className="card-gradient border border-border/50 p-8 max-w-2xl mx-auto">
-            <div className="space-y-4">
-              <Award className="h-16 w-16 text-primary mx-auto" />
-              <h3 className="text-2xl font-semibold">Verify Certifications</h3>
-              <p className="text-muted-foreground">
-                View and verify all my professional certifications on LinkedIn.
-              </p>
-              <Button size="lg" className="glow-effect" asChild>
-                <a 
-                  href="https://www.linkedin.com/in/ramana-kumar-bingi/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <ExternalLink className="mr-2 h-5 w-5" />
-                  View LinkedIn Profile
-                </a>
-              </Button>
-            </div>
-          </Card>
+          <div className="text-center mt-12">
+            <Button variant="outline" size="lg" asChild>
+              <a 
+                href="https://www.linkedin.com/in/ramana-kumar-bingi/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View All Certifications on LinkedIn
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -73,51 +73,51 @@ const Experience = () => {
     <section id="experience" className="section-padding">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Professional Experience</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Building high-performance systems and driving measurable business outcomes through innovative engineering solutions.
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">My Experience</h2>
         </div>
 
-        <div className="space-y-8">
+        <div className="max-w-4xl mx-auto space-y-16">
           {experiences.map((exp, index) => (
-            <Card key={index} className="card-gradient border border-border/50 smooth-transition hover:border-primary/30">
-              <CardHeader>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <CardTitle className="text-xl">{exp.title}</CardTitle>
-                      {exp.current && (
-                        <Badge variant="default" className="text-xs">
-                          Current
-                        </Badge>
-                      )}
-                    </div>
-                    <h3 className="text-lg font-semibold text-primary">{exp.company}</h3>
+            <div key={index} className="relative pl-8 border-l-2 border-border pb-8 last:pb-0">
+              {/* Timeline dot */}
+              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+              
+              {/* Content */}
+              <div className="space-y-4">
+                {/* Header */}
+                <div className="space-y-2">
+                  <div className="flex items-start justify-between gap-4 flex-wrap">
+                    <h3 className="text-2xl font-bold">{exp.company}</h3>
+                    {exp.current && (
+                      <Badge variant="default" className="text-xs">
+                        Current
+                      </Badge>
+                    )}
                   </div>
-                  <div className="flex flex-col md:items-end gap-2">
-                    <div className="flex items-center gap-2 text-muted-foreground">
+                  <p className="text-lg font-semibold text-primary">{exp.title}</p>
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <span className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      <span className="text-sm">{exp.period}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
+                      {exp.period}
+                    </span>
+                    <span className="flex items-center gap-2">
                       <MapPin className="h-4 w-4" />
-                      <span className="text-sm">{exp.location}</span>
-                    </div>
+                      {exp.location}
+                    </span>
                   </div>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
+
+                {/* Achievements */}
+                <ul className="space-y-2 pt-4">
                   {exp.achievements.map((achievement, achievementIndex) => (
-                    <li key={achievementIndex} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-muted-foreground leading-relaxed">{achievement}</span>
+                    <li key={achievementIndex} className="flex items-start gap-3 text-muted-foreground">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="leading-relaxed">{achievement}</span>
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -62,99 +62,53 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-card/30">
+    <section id="contact" className="section-padding bg-muted/30">
       <div className="container-max">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Let's discuss opportunities to collaborate on innovative projects.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-              <div className="space-y-4">
-                {contactInfo.map((info, index) => {
-                  const IconComponent = info.icon;
-                  const content = (
-                    <div className="flex items-center gap-4 p-4 rounded-lg bg-card/50 border border-border/50 smooth-transition hover:border-primary/30">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <IconComponent className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
-                        <p className="font-medium">{info.value}</p>
-                      </div>
-                    </div>
-                  );
-
-                  return info.href ? (
-                    <a key={index} href={info.href} target="_blank" rel="noopener noreferrer">
-                      {content}
-                    </a>
-                  ) : (
-                    <div key={index}>{content}</div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
+        <div className="max-w-2xl mx-auto text-center space-y-8">
+          <h2 className="text-4xl lg:text-5xl font-bold">Have a project in mind?</h2>
           <div>
-            <Card className="card-gradient border border-border/50">
-              <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your.email@example.com"
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Your message here..."
-                      rows={5}
-                      required
-                    />
-                  </div>
-                  
-                  <Button type="submit" className="w-full glow-effect">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <a 
+              href="mailto:ramanakumarbingi@gmail.com"
+              className="text-2xl lg:text-3xl font-semibold text-primary hover:underline"
+            >
+              ramanakumarbingi@gmail.com
+            </a>
+          </div>
+          
+          {/* Contact Links */}
+          <div className="flex justify-center gap-6 pt-8">
+            <a 
+              href="mailto:ramanakumarbingi@gmail.com"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              <span>Email</span>
+            </a>
+            <a 
+              href="tel:+18162995454"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Phone className="h-5 w-5" />
+              <span>Phone</span>
+            </a>
+            <a 
+              href="https://github.com/rbt2d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Github className="h-5 w-5" />
+              <span>GitHub</span>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/ramana-kumar-bingi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>

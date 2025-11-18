@@ -1,59 +1,50 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, User } from "lucide-react";
-
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-card/30">
+    <section id="about" className="section-padding">
       <div className="container-max">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Passionate about building robust, maintainable systems that drive measurable business outcomes.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-primary/10 rounded-lg">
-                <User className="h-6 w-6 text-primary" />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Image */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden">
+                <img 
+                  src="/profile-photo.jpeg" 
+                  alt="Ramana Kumar Bingi"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  DevOps Engineer with 10 years of experience in designing and implementing CI/CD pipelines, automating deployments, 
-                  and managing cloud infrastructure. Proficient with tools like Jenkins, Docker, Kubernetes, and Terraform, and 
-                  experienced in both Azure and AWS environments. Skilled in root-cause analysis, monitoring, and optimizing 
-                  application performance. Strong communicator with a proven track record of leading cross-functional teams to 
-                  deliver high-quality solutions.
-                </p>
+              <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold text-lg shadow-lg">
+                This is me.
               </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-accent/10 rounded-lg">
-                <GraduationCap className="h-6 w-6 text-accent" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-6">Education</h3>
-                <div className="space-y-6">
-                  <Card className="card-gradient border border-border/50 smooth-transition hover:border-primary/30">
-                    <CardContent className="p-6">
-                      <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">M.S. Computer Science</h4>
-                        <span className="text-sm text-muted-foreground">2017</span>
-                      </div>
-                      <p className="text-muted-foreground">University of Missouri – Kansas City</p>
-                      <p className="text-xs text-muted-foreground mt-1">Kansas City, MO</p>
-                      <p className="text-xs text-muted-foreground mt-1">
-                        Relevant Coursework: Cloud Computing, DevOps Practices, Distributed Systems, 
-                        Software Architecture, Performance Engineering
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+          {/* Right Column - Content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl lg:text-5xl font-bold">
+                Hi, I'm <span className="text-primary">Ramana Kumar Bingi</span>.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I'm a DevOps Engineer & Site Reliability Expert passionate about creating reliable, scalable 
+                cloud infrastructure. I specialize in AWS, Azure, Kubernetes, and Terraform, while also bringing 
+                strong automation capabilities with Jenkins, Docker, and CI/CD pipelines.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                With experience at companies like Pax8 and AT&T, I've architected and deployed infrastructure that 
+                improved deployment consistency by 60% and reduced operational costs by 30%. My expertise spans 
+                cloud architecture, Infrastructure as Code, monitoring and observability, and creating seamless 
+                DevOps workflows across development and operations teams.
+              </p>
+            </div>
+
+            {/* Education */}
+            <div className="pt-4 border-t border-border">
+              <h3 className="text-xl font-semibold mb-4">Education</h3>
+              <div className="space-y-2">
+                <h4 className="font-semibold text-lg">M.S. Computer Science</h4>
+                <p className="text-muted-foreground">University of Missouri – Kansas City</p>
+                <p className="text-sm text-muted-foreground">Kansas City, MO • Graduated 2017</p>
               </div>
             </div>
           </div>

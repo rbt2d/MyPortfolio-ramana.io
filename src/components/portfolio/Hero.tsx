@@ -1,62 +1,74 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center section-padding pt-32">
+    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-32 pb-20">
       <div className="container-max">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Hi, I'm{" "}
-                <span className="text-gradient">
-                  Ramana Kumar Bingi
-                </span>
-              </h1>
-              <h2 className="text-2xl lg:text-3xl text-muted-foreground">
-                Senior DevOps Engineer & Site Reliability Expert
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl">
-                10 years of experience designing CI/CD pipelines, automating deployments, 
-                and managing cloud infrastructure with AWS, Azure, and Kubernetes.
-              </p>
-            </div>
+        <div className="flex flex-col items-center text-center space-y-12 max-w-6xl mx-auto">
+          {/* Main Title */}
+          <div className="space-y-6">
+            <h1 className="text-7xl lg:text-8xl font-bold tracking-tight">
+              DEVOPS
+            </h1>
+            <h1 className="text-7xl lg:text-8xl font-bold tracking-tight">
+              ENGINEER
+            </h1>
+          </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="glow-effect" asChild>
-                <a href="#portfolio">
-                  View My Work
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                  View Resume
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub
-                </a>
-              </Button>
+          {/* Profile Photo */}
+          <div className="relative">
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20">
+              <img 
+                src="/profile-photo.jpeg" 
+                alt="Ramana Kumar Bingi"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-accent p-1">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                  <img 
-                    src="/profile-photo.jpeg" 
-                    alt="Ramana Kumar Bingi - DevOps Engineer"
-                    className="w-72 h-72 rounded-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-20 blur-xl"></div>
+          {/* Description */}
+          <div className="max-w-3xl space-y-6">
+            <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+              Hi! I'm <span className="text-foreground font-semibold">Ramana Kumar Bingi</span>. 
+              A passionate DevOps Engineer & Site Reliability Expert with <span className="text-foreground font-semibold">10+ years</span> of 
+              experience crafting robust CI/CD pipelines and cloud infrastructure. I specialize in AWS, Azure, Kubernetes, and Terraform, 
+              while also bringing strong automation expertise in Jenkins, Docker, and Infrastructure as Code.
+            </p>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-4xl pt-8">
+            <div className="space-y-2">
+              <h3 className="text-5xl font-bold">50+</h3>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider">Projects Deployed</p>
             </div>
+            <div className="space-y-2">
+              <h3 className="text-5xl font-bold">60%</h3>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider">Deployment Efficiency</p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-5xl font-bold">10+</h3>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</p>
+            </div>
+          </div>
+
+          {/* Tagline */}
+          <div className="max-w-3xl pt-8">
+            <p className="text-base lg:text-lg text-muted-foreground italic border-l-4 border-primary pl-6">
+              I believe in infrastructure-as-code and creating reliable, scalable systems that empower 
+              development teams while solving real-world problems through thoughtful DevOps engineering.
+            </p>
+          </div>
+
+          {/* CTA Button */}
+          <div className="pt-4">
+            <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="#contact">
+                <Mail className="mr-2 h-5 w-5" />
+                ramanakumarbingi@gmail.com
+              </a>
+            </Button>
           </div>
         </div>
       </div>

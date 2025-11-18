@@ -18,9 +18,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <nav className="container-max">
-        <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-bold text-gradient">
-            Ramana Kumar Bingi
+        <div className="flex items-center justify-between h-20 px-6">
+          {/* Logo */}
+          <div className="text-xl font-bold uppercase tracking-tight">
+            RAMANA
           </div>
 
           {/* Desktop Navigation */}
@@ -29,33 +30,42 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary smooth-transition"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wide"
               >
                 {item.label}
               </a>
             ))}
           </div>
 
-          {/* Desktop Actions */}
+          {/* Social Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" asChild>
-              <a href="https://www.linkedin.com/in/ramana-kumar-bingi/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-4 w-4 mr-2" />
-                LinkedIn
-              </a>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
-                <Github className="h-4 w-4 mr-2" />
-                GitHub
-              </a>
-            </Button>
-            <Button size="sm" className="glow-effect" asChild>
-              <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                <FileText className="h-4 w-4 mr-2" />
-                Resume
-              </a>
-            </Button>
+            <a 
+              href="https://github.com/rbt2d" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/ramana-kumar-bingi/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+            <a 
+              href="/Ramana_Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Resume"
+            >
+              <FileText className="h-5 w-5" />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,36 +82,42 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4 px-6">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-muted-foreground hover:text-primary smooth-transition"
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wide"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" size="sm" asChild>
-                  <a href="https://www.linkedin.com/in/ramana-kumar-bingi/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="h-4 w-4 mr-2" />
-                    LinkedIn
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a href="https://github.com/rbt2d" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button size="sm" className="glow-effect" asChild>
-                  <a href="/Ramana_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <FileText className="h-4 w-4 mr-2" />
-                    Resume
-                  </a>
-                </Button>
+              <div className="flex gap-4 pt-4">
+                <a 
+                  href="https://github.com/rbt2d" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/ramana-kumar-bingi/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a 
+                  href="/Ramana_Resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <FileText className="h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>
