@@ -68,19 +68,19 @@ const Certifications = () => {
             {certifications.map((cert, index) => (
               <div 
                 key={index}
-                className="p-6 border border-border rounded-lg hover:border-primary/50 transition-colors"
+                className="group p-8 border-2 border-border rounded-2xl hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-500 bg-card cursor-default"
               >
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex items-start justify-between gap-4">
-                    <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <Badge variant="outline" className="text-xs">
+                    <Award className="h-7 w-7 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                    <Badge variant="outline" className="text-xs border-2 group-hover:border-primary/50 transition-colors">
                       {cert.level}
                     </Badge>
                   </div>
-                  <h3 className="font-semibold text-lg leading-tight">
+                  <h3 className="font-bold text-lg leading-tight group-hover:text-primary transition-colors">
                     {cert.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                  <p className="text-sm text-muted-foreground font-medium">{cert.issuer}</p>
                 </div>
               </div>
             ))}

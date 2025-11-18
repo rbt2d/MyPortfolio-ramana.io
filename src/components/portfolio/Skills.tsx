@@ -42,7 +42,7 @@ const Skills = () => {
                   <Badge 
                     key={skillIndex} 
                     variant="outline" 
-                    className="px-6 py-3 text-base font-medium hover:bg-primary hover:text-primary-foreground transition-all cursor-default"
+                    className="px-6 py-3 text-base font-medium hover:bg-primary hover:text-primary-foreground hover:scale-105 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 cursor-default border-2"
                   >
                     {skill}
                   </Badge>

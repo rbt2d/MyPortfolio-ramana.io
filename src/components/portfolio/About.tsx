@@ -5,15 +5,16 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Image */}
           <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden">
+            <div className="relative group">
+              <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 hover:shadow-primary/20 transition-shadow duration-500">
                 <img 
                   src="/profile-photo.jpeg" 
                   alt="Ramana Kumar Bingi"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold text-lg shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/30 hover:scale-105 transition-transform cursor-default">
                 This is me.
               </div>
             </div>

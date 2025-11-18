@@ -53,21 +53,21 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="group relative p-8 border border-border rounded-lg hover:border-primary/50 transition-all cursor-pointer"
+              className="group relative p-8 border-2 border-border rounded-2xl hover:border-primary hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-500 cursor-pointer bg-card hover:bg-primary/5"
             >
               <div className="space-y-4">
                 {/* Project Number */}
-                <div className="text-sm font-mono text-muted-foreground">
+                <div className="text-sm font-mono text-primary font-bold group-hover:scale-110 transition-transform">
                   _{String(index + 1).padStart(2, '0')}.
                 </div>
 
                 {/* Project Title */}
-                <h3 className="text-xl font-bold leading-tight">
+                <h3 className="text-xl font-bold leading-tight group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
 
                 {/* Company & Year */}
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground font-medium">
                   {project.company} • {project.year}
                 </p>
 
@@ -77,13 +77,16 @@ const Portfolio = () => {
                     <Badge 
                       key={techIndex} 
                       variant="outline"
-                      className="text-xs"
+                      className="text-xs group-hover:border-primary/50 transition-colors"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
               </div>
+
+              {/* Hover gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
             </div>
           ))}
         </div>
