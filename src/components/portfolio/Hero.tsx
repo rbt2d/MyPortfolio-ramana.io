@@ -48,8 +48,8 @@ const Hero = () => {
               <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Projects Deployed</p>
             </div>
             <div className="space-y-3 hover-lift cursor-default p-6 rounded-2xl hover:bg-primary/5 transition-all">
-              <h3 className="text-6xl font-bold text-gradient">60%</h3>
-              <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Deployment Efficiency</p>
+              <h3 className="text-6xl font-bold text-gradient">99%</h3>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">System Uptime</p>
             </div>
             <div className="space-y-3 hover-lift cursor-default p-6 rounded-2xl hover:bg-primary/5 transition-all">
               <h3 className="text-6xl font-bold text-gradient">10+</h3>
