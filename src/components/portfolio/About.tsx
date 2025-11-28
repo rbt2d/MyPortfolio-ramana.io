@@ -32,10 +32,10 @@ const About = () => {
                 strong automation capabilities with Jenkins, Docker, and CI/CD pipelines.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With experience at companies like Pax8 and AT&T, I've architected and deployed infrastructure that 
-                improved deployment consistency by 60% and reduced operational costs by 30%. My expertise spans 
-                cloud architecture, Infrastructure as Code, monitoring and observability, and creating seamless 
-                DevOps workflows across development and operations teams.
+                With extensive experience at AT&T and other leading organizations, I've architected and deployed 
+                infrastructure that improved deployment consistency by 60% and reduced operational costs by 30%. 
+                My expertise spans cloud architecture, Infrastructure as Code, monitoring and observability, and 
+                creating seamless DevOps workflows across development and operations teams.
               </p>
             </div>
 

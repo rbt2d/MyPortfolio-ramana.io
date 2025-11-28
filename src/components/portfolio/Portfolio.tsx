@@ -6,33 +6,33 @@ const Portfolio = () => {
   const projects = [
     {
       title: "AWS DataZone Data Governance",
-      company: "Pax8",
-      year: "2025",
+      company: "AT&T",
+      year: "2018-Present",
       technologies: ["Terraform", "Terragrunt", "AWS"]
     },
     {
-      title: "FinOps Cost Tracking",
-      company: "Pax8",
-      year: "2025",
+      title: "Cloud Cost Optimization",
+      company: "AT&T",
+      year: "2018-Present",
       technologies: ["AWS Cost Explorer", "CloudWatch", "Monitoring"]
     },
     {
       title: "Azure Cloud Migration",
       company: "AT&T",
-      year: "2018-2025",
+      year: "2018-Present",
       technologies: ["Azure", "Jenkins", "Terraform"]
     },
     {
       title: "CI/CD Pipeline Automation",
       company: "AT&T",
-      year: "2018-2025",
+      year: "2018-Present",
       technologies: ["Jenkins", "Azure DevOps", "Docker"]
     },
     {
       title: "Infrastructure as Code",
       company: "AT&T",
-      year: "2018-2025",
-      technologies: ["Terraform", "IaC", "Automation"]
+      year: "2018-Present",
+      technologies: ["Terraform", "Terragrunt", "Atlantis"]
     },
     {
       title: "AWS Serverless Platform",

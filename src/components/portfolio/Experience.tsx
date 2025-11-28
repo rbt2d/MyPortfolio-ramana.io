@@ -5,35 +5,25 @@ import { MapPin, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior DevOps Engineer",
-      company: "Pax8",
-      period: "June 2025 – Present",
-      location: "Remote",
-      achievements: [
-        "Architected AWS DataZone data governance platform using Terraform and Terragrunt, implementing reusable IaC modules for domain management, environment blueprints, and IAM policies.",
-        "Led comprehensive cost optimization analysis for AWS MSK enhanced monitoring across CloudWatch, Sumo Logic, and MSK services, identifying 75% credit capacity headroom and establishing automated tracking mechanisms to prevent budget overruns.",
-        "Deployed comprehensive monitoring infrastructure using SumoLogic, CloudWatch, and Slack integration with automated health checks and threshold-based alerts, reducing incident detection time and enabling proactive issue resolution.",
-        "Established FinOps cost tracking mechanisms using AWS Cost Explorer with tag-based filtering and automated anomaly detection for greater than 20% week-over-week cost spikes, implementing monthly stakeholder reporting processes.",
-        "Improved infrastructure deployment consistency by 60% using Terragrunt configuration inheritance patterns and Atlantis for PR-based infrastructure management workflows.",
-        "Mentored junior developers on performance debugging and AI-first coding practices, raising team-wide productivity."
-      ],
-      current: true
-    },
-    {
       title: "Senior Site Reliability Engineer",
       company: "AT&T",
-      period: "January 2018 – June 2025",
+      period: "January 2018 – Present",
       location: "Dallas, TX",
       achievements: [
-        "Implemented end-to-end CI/CD pipelines using Jenkins and Azure DevOps, reducing deployment times by 40%.",
-        "Led a team of 5 engineers in migrating 50+ on-premises applications to Azure, reducing operational costs by 30% and enhancing scalability.",
-        "Optimized build processes, resulting in a 25% reduction in build failures using automated testing protocols and Docker containers.",
-        "Deployed Infrastructure as Code (IaC) using Terraform, improving deployment consistency by 60%.",
-        "Reduced error rates in production environments by 35% by setting up detailed monitoring dashboards using Azure Monitor, KQL, and Application Insights.",
-        "Automated security compliance checks, increasing compliance efficiency by 50% and reducing manual check times by 20 hours monthly.",
-        "Mentored junior engineers, increasing team skillset in Kubernetes and Azure DevOps."
+        "Designed and maintained end-to-end CI/CD pipelines using Jenkins and Azure DevOps, automating testing and deployment processes, reducing deployment times by 40% and minimizing production errors by 35%.",
+        "Implemented Infrastructure as Code using Terraform and Terragrunt, managing cloud resources across AWS and Azure, improving deployment consistency by 60% and enabling repeatable infrastructure provisioning.",
+        "Architected AWS DataZone data governance platform using Terraform with reusable IaC modules for domain management, environment blueprints, and IAM policies, ensuring scalable and maintainable infrastructure.",
+        "Optimized cloud resources by implementing cost-effective solutions, leading comprehensive cost analysis across AWS services, identifying 75% credit capacity headroom and establishing automated tracking mechanisms to prevent budget overruns.",
+        "Proficiently managed Docker containers and Kubernetes clusters for application deployment, optimizing build processes and reducing build failures by 25% through automated testing protocols.",
+        "Deployed comprehensive monitoring infrastructure using SumoLogic, CloudWatch, Prometheus, and Grafana with automated health checks and threshold-based alerts, reducing incident detection time and enabling proactive issue resolution.",
+        "Implemented automated security compliance checks and vulnerability scanning, increasing compliance efficiency by 50% and reducing manual audit times by 20 hours monthly while ensuring secure code deployment practices.",
+        "Collaborated with development, operations, and security teams to ensure smooth deployment workflows, troubleshoot system issues, and implement preventative measures for seamless operations.",
+        "Fixed software performance errors, tracked system metrics, and implemented preventative measures to ensure smooth workflows and minimize downtime.",
+        "Improved infrastructure deployment consistency using Terragrunt configuration inheritance patterns and Atlantis for PR-based infrastructure management workflows.",
+        "Led migration of 50+ on-premises applications to Azure cloud infrastructure, reducing operational costs by 30% and enhancing scalability and performance.",
+        "Mentored junior engineers on DevOps best practices, performance debugging, Kubernetes administration, and infrastructure automation, raising team-wide productivity and technical capabilities."
       ],
-      current: false
+      current: true
     },
     {
       title: "Java Developer",
@@ -41,13 +31,11 @@ const Experience = () => {
       period: "August 2016 – August 2017",
       location: "Kansas City, MO",
       achievements: [
-        "Built and implemented Java Spring Boot-based REST microservices, enhancing application modularity and scalability by 40%.",
-        "Developed event-driven platforms using AWS Lambda Functions, SQS, and SNS, improving processing efficiency and reducing latency.",
-        "Configured infrastructure on AWS using CloudFormation, ensuring consistent and repeatable deployments, reducing setup time.",
-        "Configured DynamoDB tables with various indexing and capacity units, optimizing database performance and scalability by 20%.",
-        "Implemented AWS SDK for Java to utilize DynamoDB for non-relational data storage, enhancing data handling and storage efficiency.",
-        "Deployed custom CRON jobs as AWS Lambda Functions for scheduled reports, automating reporting processes and saving 10 hours of manual work weekly.",
-        "Written Dockerfiles for deploying applications on AWS CloudFormation, ECS, and EC2 instances, streamlining deployment processes and improving application reliability."
+        "Built and deployed Java Spring Boot microservices on AWS using CloudFormation for infrastructure management, ensuring consistent and repeatable deployments across environments.",
+        "Configured and managed AWS infrastructure including Lambda, SQS, SNS, DynamoDB, ECS, and EC2 instances, implementing event-driven architectures to improve processing efficiency.",
+        "Written Dockerfiles for containerizing applications and deploying on AWS ECS and EC2 instances, streamlining deployment processes and improving application reliability.",
+        "Deployed custom scheduled jobs as AWS Lambda Functions, automating reporting processes and eliminating 10 hours of manual work weekly.",
+        "Collaborated with cross-functional teams to troubleshoot deployment issues and optimize application performance in cloud environments."
       ],
       current: false
     },
@@ -57,13 +45,11 @@ const Experience = () => {
       period: "June 2015 – May 2016",
       location: "Hyderabad, India",
       achievements: [
-        "Implemented MVC architecture using Spring MVC, improving application structure and maintainability, reducing development time by 25%.",
-        "Created data models and generated Hibernate mappings and domain objects, enhancing data manipulation and retrieval efficiency.",
-        "Developed Python scripts for automating regression tests, improving test efficiency and reducing testing time by 30%.",
-        "Developed unit/integration test cases using JUnit 3.8, increasing test coverage and code reliability.",
-        "Used Jira for tracking progress and followed Agile methodology, improving project management and task tracking efficiency.",
-        "Implemented Jenkins for CI/CD, automating build and deployment processes, reducing manual effort.",
-        "Utilized Log4J for efficient logging and debugging, enhancing application monitoring and issue resolution speed."
+        "Implemented CI/CD pipelines using Jenkins, automating build, testing, and deployment processes, reducing manual effort and accelerating release cycles.",
+        "Developed Python scripts for automating regression tests and deployment tasks, improving operational efficiency and reducing testing time by 30%.",
+        "Collaborated with development teams following Agile methodology, using Jira for project tracking and task management to ensure timely delivery.",
+        "Utilized Log4J for application logging and monitoring, enhancing debugging capabilities and issue resolution speed.",
+        "Developed comprehensive unit and integration test cases using JUnit, increasing test coverage and code reliability."
       ],
       current: false
     }
